@@ -3,7 +3,7 @@ require 'rack'
 
 class MiPrimeraWebApp
  def call(env)
-  [000, {}, []]
+  [200, {'COntent-Type' => 'text/html'}, [File.read('index.html')]]
  end
 end
 
