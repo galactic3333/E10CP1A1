@@ -12,9 +12,10 @@ end
 
 module Attendance
   def student_quantity
+    # https://stackoverflow.com/questions/30022273/how-to-access-class-variables-from-module
     cant = self.class_variable_get(:@@quantity)
     "Cantidad de alumnos: #{cant}"
-    #{}"Cantidad de Alumnos = #{self.quantity}" #No se entiende por que sale error al usar esta solucion de Nicolas
+    #{}"Cantidad de Alumnos = #{self.quantity}" #Solucion de Nicolas Alamo
   end
 end
 
